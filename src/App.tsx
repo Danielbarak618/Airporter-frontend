@@ -42,7 +42,7 @@ function App() {
    
     const AirportData = { 
       icoa24:icoa24.toUpperCase(),
-      time:startingTime+=20
+      time:startingTime+=5
     }
     const departingFlights = await airPlaneService.getDepartures(AirportData)
       const arrivingFlights = await airPlaneService.getArrivals(AirportData)
@@ -50,7 +50,7 @@ function App() {
       
       setArrivals(arrivingFlights)
       setDepartures(departingFlights)
-    },20000)
+    },5000)
     
 
   }

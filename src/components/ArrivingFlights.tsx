@@ -30,7 +30,6 @@ const ArrivingFlights = ({arrivals,updateFlightStatus}:{arrivals:Flight[],update
             </thead>
             <tbody>
             {arrivals.map((arrival:Flight,idx:number) => {
-                // setArrival(arrival)
             return (
               <tr className='active-row' key={idx}>
                 <td>{arrival.callsign}</td>
